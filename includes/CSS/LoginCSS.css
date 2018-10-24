@@ -22,7 +22,7 @@
 	margin-left: 37%;
 	margin-top: -13%;
 }
-.input-box >input[type=text]{
+.input-box >input[type=text], .input-box >input[type=password] {
 	width: 95%;
 	border: 2px solid #aaa;
 	border-radius: 5px;
@@ -32,7 +32,7 @@
 	font-family:Hobo Std;
 	font-size: 15px;
 }
-.input-box >input[type=text]:focus{
+.input-box >input[type=text]:focus, .input-box >input[type=password]:focus{
 	border-color: dodgerblue;
 	box-shadow: 0 0 9px 0 dodgerblue;
 }
