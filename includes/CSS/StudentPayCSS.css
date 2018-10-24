@@ -1,0 +1,68 @@
+/**{
+	margin: 0 auto;
+}*/
+body{
+	background-color: #f2e6ff;
+}
+#caption{
+	width: 99%;
+	height: 60px;
+	background-color: #1aa3ff;
+	/*background:rgba(0,0,0,.5);*/
+	border-radius: 5px;
+	color:white;
+}
+#caption >h2{
+	font-family: sans-serif;
+	padding: 15px 20px;
+}
+.container{
+	width: 70%;
+	font-family: sans-serif;
+	background-color: #ccccff;
+}
+.txtPay, .datePay, .selectPay, textarea{
+	width: 30%;
+	height: 40px;
+	border:1px solid rgb(22,22,22,2);
+	border-radius: 10px;
+	margin: 5px;
+	font-family: sans-serif;
+	font-size: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.txtPay:focus,textarea:focus{
+	box-shadow: 0px 0px 10px lightblue;
+}
+#stu-list{
+	font-family: sans-serif;
+	width: 100%;
+}
+table{
+	width: 100%;
+	height: 40px;
+	border-collapse: collapse;/*No Double Border*/
+	font-size: 15px;
+	font-family: sans-serif;
+	background-color: #ccccff;
+}
+#head{
+	height: 50px;
+	border:2px solid lightgreen;
+}
+/*input[type='button'], input[type='reset'] {
+	width: 17%;
+	height: 45px;
+	font-size: 18px;
+	font-family: sans-serif;
+	cursor: pointer;
+	margin-top: 10px;
+}
+input[type='button']:hover, input[type='reset']:hover {
+	box-shadow: 0px 0px 10px lightblue;
+}
+input[type='button'], input[type='reset'] {
+	background-color: rgba(0, 0, 204, 0.4);
+	color: whitesmoke;
+}*/

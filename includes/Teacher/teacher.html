@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Teacher Management</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="includes/jsschool.js" type="text/javascript"></script>
+
+</head>
+<body> -->
+
+	<div class="container-fluid">
+		<h1 class="h1">New Teachers</h1><br/>
+		<h4 class="h4">Add Teachers</h4>
+<form action="" method="get" accept-charset="utf-8">
+
+		<fieldset>
+			<img src="includes/image/photo.jpg" id="photo">
+
+			Teacher's Name:
+				<input type="text" placeholder="Input Name" style="width: 250px" id="Tname" name="Tname">
+				<span id="errorName"></span><br/><br/>
+				
+
+			Gender : <select name="Gender" id="gender" style="margin-left: 53px">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select><br/><br/>
+
+			Date Of Birth :<input type="Date" style="margin-left: 20px;width: 250px" id="birthdate">
+				<span id="errorBirthdate"></span><br/><br/>	
+
+			Phone Number:
+				<input type="text" placeholder="Input Contact Number" style="margin-left: 6px;width: 250px" id="phone">
+				<span id="errorPhone"></span><br/><br/>
+
+			Position :
+				<input type="text" placeholder="Input Position" style="margin-left: 50px;width: 250px" id="position">
+				<span id="errorPosition"></span><br/><br/>
+
+			Date Joined :<input type="Date" style="margin-left: 27px;width: 250px" id="datejoin">
+				<span id="errorDatejoin"></span><br/><br/>
+
+			Salary :
+				<input type="text" placeholder="$" style="margin-left: 60px;width: 250px" id="salary">
+				<span id="errorSalary"></span><br/><br/>
+
+			Permanent Address : <span id="errorAddress"></span><br/>
+				<textarea id="address" style="width: 71%;height: 70px"></textarea><br/><br/>
+
+			<input type="button" name="btnAdd" value="Add" onclick="run()" id="btnAdd">
+			<input type="Reset" name=""  value="Reset">
+
+		</fieldset>
+</form><br/><br/>
+	
+	<h1 class="h1">Teachers' Information</h1><br/>
+	<h3 class="h3">Total Teachers = <span id="numberOfRow">0</span></h3>
+	<h4 class="h4">Teachers List</h4>
+
+	<table id="table" border="2">
+		<tr style="cursor: pointer;">
+			<th>ID</th>
+			<th>Teachers Name</th>
+			<th>Sex</th>
+			<th>Date Of Birth</th>
+			<th>Phone Number</th>
+			<th>Major</th>
+			<th>Date Joined</th>
+			<th>Salary</th>
+			<th>Permanent Address</th>
+		</tr>
+	</table><br/>
+		<input type="button" id="remove" value="Delete Info" onclick="deleteRecord()" name="">
+
+	</div>
+
+
+	
+<!-- </body>
+</html> -->

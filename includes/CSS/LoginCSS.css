@@ -1,0 +1,57 @@
+/**{
+	margin:0 auto;
+}*/
+/*body{
+	background-image: url(../Photos/bglogin.jpg);../ Back Folder
+	background-size: cover;
+}*/
+/*.LOGIN {
+	background-image: url(Photos/bglogin.jpg);
+}*/
+.login-box{
+	width: 30%;
+	height: 325px;
+	margin-top: 7%;
+	margin-left: 35%;
+	border-radius: 5px;
+	background:rgba(0,0,0,.5);
+}
+.img{
+	width: 26%;
+	height: 110px;
+	margin-left: 37%;
+	margin-top: -13%;
+}
+.input-box >input[type=text]{
+	width: 95%;
+	border: 2px solid #aaa;
+	border-radius: 5px;
+	margin: 5px 11px;/*Space 1Height , 2Width Textbox border*/
+	padding: 10px;/* height Textbox*/
+	box-sizing: border-box;/*Keep Textbox inside border*/
+	font-family:Hobo Std;
+	font-size: 15px;
+}
+.input-box >input[type=text]:focus{
+	border-color: dodgerblue;
+	box-shadow: 0 0 9px 0 dodgerblue;
+}
+.input-box >input[type="button"]{
+	background-color: #DAA520;
+	border-radius: 20px;
+	font-family:Elephant;
+	width: 50%;
+	height: 40px;
+	margin-left: 25%;
+	margin-top: 2px;
+	font-size: 1em;
+}
+.input-box >p{
+	margin-top: 10px;
+	text-align: center;
+}
+.input-box > p >a{
+	color: whitesmoke;
+	font-family: Elephant;
+	/*text-decoration: none;*/
+}

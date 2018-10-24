@@ -1,0 +1,67 @@
+*{
+	margin:0 auto;
+}
+/*body{
+	background:url(../Photos/bg.jpg);
+	background-size: cover;
+}*/
+.signIn{
+	font-family: Elephant;
+	color:#32cd32;
+	font-size: 2em;
+	padding: 5px;
+	text-align: center;
+	margin: 15px;
+}
+#input-box >h4{
+	color: whitesmoke;
+	font-family: sans-serif;
+}
+#register-box{
+	/*width: 40%;*/
+	/*height: 630px;*/
+	
+	margin-left:30%;
+	margin-top: 15px;
+	padding-bottom: 20px;
+	background:rgb(0,0,0,.5);
+	border-radius: 20px 20px 20px 20px;
+	border:1px solid limegreen;
+}
+.text, .password{
+	margin: 4px 0px;/*5px=height Spacce, 0 Width Space*/
+	width: 90%;
+	height: 50px;
+	border-radius: 15px;
+	font-family: sans-serif;
+	font-size: 1em;
+	padding: 15px;/*Space Text In Textbox*/
+	box-sizing: border-box;/*Keep textbox static*/
+}
+.text:focus{
+	border-color: dodgerblue;
+	box-shadow: 0 0 9px 0 lime;
+}
+.password:focus{
+	border-color: dodgerblue;
+	box-shadow: 0 0 9px 0 lime;
+}
+#input-box{
+	margin-left:50px;
+	margin-top: 20px;
+}
+.button{
+	width: 30%;
+	height: 50px;
+	margin-top: 10px;
+	border-radius: 50px 50px 50px 50px;
+	font-family:sans-serif;
+	font-size: 20px;
+	background-color: whitesmoke;
+	border:2px solid lime;
+}
+.button:hover{
+	border-color: green;
+	background-color: lime;
+	border:1px solid orangered;
+}

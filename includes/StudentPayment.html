@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Student-Payment</title>
+	<link rel="stylesheet" href="CSS/StudentPayCSS.css">
+	<script src="JS/JavaScript.js" type="text/javascript"></script>
+
+</head>
+<body> -->
+	<div id="caption">
+		<h2>Student Payment</h2>
+	</div><br>
+	<div class="container" align="center">
+		<form>
+		<fieldset>
+			<legend align="center" style="font-size: 25px;color:blue">Student Payment</legend>
+			<input class="txtPay" type="text" id="stu-id" placeholder="Student's ID" name="">			
+			<input class="txtPay" type="text" id="stu-name" placeholder="Student's name" name="">
+			<select class="selectPay" name="" id="gender">​
+				<option value="Male">Male</option>
+				<option value="Female">Female</option>
+			</select>
+			<input class="datePay" type="date" id="date" placeholder="Date" name="">
+			<input class="txtPay" type="text" id="current-address" placeholder="Current Address" name="">
+			<input class="txtPay" type="text" id="contact" placeholder="Contact number" name="">
+			<input class="txtPay" type="text" id="course" placeholder="Course" name="">
+			<input class="txtPay" type="text" id="room-id" placeholder="Class ID" name="">
+			<input class="txtPay" type="text" id="payment" placeholder="Payment ($)" name="">
+
+			<input class="btnPay" type="button" value="AddRecord" onclick="add()" name="">
+			<input class="resetPay" type="reset" value="Reset" name="">
+			<input class="btnPay" type="button" value="Delete" onclick="remove()" name="">
+		</fieldset>
+		</form>
+	</div>
+	<br>
+	<div id="stu-list">
+		<h4 align="center" style="font-size: 20px;">Students Information</h4>
+		<table border="1">
+		<tbody id="table">
+			<tr id="head">
+				<th width="8%">Stu-ID</th>
+				<th width="15%">Student's Name</th>
+				<th width="5%">Gender</th>
+				<th width="13%">Date</th>
+				<th width="15%">Current Address</th>
+				<th width="15%">Contact Number</th>
+				<th width="10%">Course</th>
+				<th width="10%">Room ID</th>
+				<th width="10%">Payment</th>
+			</tr>
+		</tbody>
+		</table>
+		<h3 style="margin: 15px;text-align:right;">Total Students:
+			<span id="total-student">0</span> Persons.
+		</h3>
+	</div>
+	
+<!-- </body>
+</html> -->

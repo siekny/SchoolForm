@@ -1,0 +1,78 @@
+<div class="col-lg-12 col-sm-12 col-xs-12 styleHomeDashboard">
+	<h2>Student Register <span style="font-size: .5em;"> Preview</span></h2>				
+	<a href="#"><span class="fa fa-home"></span>Home 
+		<span class="fa fa-angle-left"></span> Students
+	</a>
+</div>			
+<div class="col-lg-8 col-sm-12 col-xs-12 addClass">
+	<h3>Register Form</h3>
+	<div class="frmStuRegister">
+		<div class="col-lg-12 col-sm-12 col-xs-12">
+			<div class="form-group StuRegister">
+				<span class="validate" id="invalidStID">* Please Enter Student's ID</span>			
+				<input id="stID" class="form-control" title="Student's ID" type="text" placeholder="Student's ID" name="">
+			</div>
+			<div class="form-group StuRegister">
+				<span class="validate" id="invalidStName">* Please Enter Student's Name</span>
+				<input id="stName" class="form-control" title="Student's Name" type="text" placeholder="Student's Name" name="">
+			</div>
+			<div class="form-group">
+				<strong>Gender :</strong>
+				<select name="Gender" id="gender" style="margin-left: 30px; border-radius: 4px; border: unset; height: 30px">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+			</div>
+			<div class="form-group">
+			 	<strong>Date of Birth</strong>
+				<input id="birthdate" type="date" placeholder="Date of Birth" name="" style="border-radius: 4px; border: 1px solid lightgray; height: 30px; margin-left: 30px;">
+				<span class="validate" id="invalidStBirthDate">* Please Choose Birth of Date</span>
+			</div>
+			<div class="form-group StuRegister">
+				<span class="validate" id="invalidStAddress">* Please Enter Address</span>
+				<textarea id="address" class="form-control" title="Address" name="" rows="3" placeholder="Address" style="resize: none;"></textarea>
+			</div>
+			<div class="form-group StuRegister">
+				<span class="validate" id="invalidStPhoneNumber">* Please Enter Phone Number</span>
+				<input id="phonenumber" class="form-control" title="Phone Number" type="number" placeholder="Phone Number" name="">
+			</div>
+			<div class="StuRegister">
+				<span class="validate" id="invalidStMail">* Please Enter Email</span>
+				<input id="Mail" class="form-control" title="E-mail" type="mail" placeholder="E-mail" name=""><br>
+			</div>
+			<div>
+				<input type="button" id="btnAddSt" class="btn btn-primary" value="Add" title="Save all Data into Table" name="">
+				
+			</div>
+			
+		</div>
+	</div>   <!-- frmStuRegister -->
+</div>
+
+<div class="col-lg-12 col-sm-12 col-xs-12 addStudentRegister">
+	<table border="1" class="table table-responsive">
+		<caption><strong>Show Student Register</strong>
+			<div style="float: right;margin-top: 30px;">
+				<input class="form-control" type="text" placeholder="Search" title="Search">
+			</div>
+		</caption>
+		<tbody>
+			<tr>
+				<th>No</th>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Sex</th>
+				<th>Date of Birth</th>
+				<th>Address</th>
+				<th>Tel</th>
+				<th>Email</th>
+				<th>Select</th>
+			</tr>
+		</tbody>
+	</table>
+	<p id="totalstudent" class="totalClass">Total Classes   : <span id="NumberOfRow">0 </span> Rooms</p>
+	
+	<input type="button" id="removeStu" class="btn btn-default" value="Delete" name="">
+	
+	
+</div>

@@ -1,0 +1,52 @@
+
+
+<div class="col-lg-12 col-sm-12 col-xs-12 styleHomeDashboard">
+<h2>Add Class and section <span style="font-size: .5em;"> Preview</span></h2>				
+	<a href="#"><span class="fa fa-home"></span>Home 
+		<span class="fa fa-angle-left"></span> Class Room
+	</a>
+</div>			
+<div class="col-lg-8 col-sm-12 col-xs-12 addClass">
+	<h3>Add Class Room</h3>
+	<form class="frm-addClass">
+		Class Room Name <span class="Invalid" id="InvalidRoomname">*Please Enter Roomname</span>
+		<input type="text" class="form-control" id="roomname" placeholder="Enter class room name" name=""><br>
+		Class Room Number <span class="Invalid" id="InvalidRoomnumber">*Please Enter Roomnumber</span>
+		<input type="text" class="form-control" id="roomnumber" placeholder="Enter class room number" name=""><br>
+		Student Limit <span class="Invalid" id="InvalidStudentlimit">*Please Enter Student Limit</span>
+		<input type="number" min="0" max="9" class="form-control" id="studentlimit" placeholder="Student Limit" name=""><br>
+		Hall Charge(%) <span class="Invalid" id="InvalidHallcharge">*Please Enter Hall charge</span>
+		<input type="number" min="0" max="9" class="form-control" id="hallcharge" placeholder="Hall Charge" name=""><br>
+		
+		<input type="button" id="saveClass" class="btn btn-primary" value="Add" name="">
+		
+	</form>
+</div>
+
+<div class="col-lg-12 col-sm-12 col-xs-12 showClass">
+	<h3>All Class Room</h3>
+
+	<table border="1" id="ShowTable" class="showTable table table-responsive">
+		<caption>
+			<form style="float: right;">
+				<!-- Search -->
+				<input id="search" class="clo-lg-3 form-control" type="text" placeholder="Search" title="Search Here" name="">
+				<!-- <span class="fa fa-search"></span> -->
+
+			</form>
+		</caption>
+		<tbody id="table">
+			<tr>
+				<th>ID</th>
+				<th>Class Room Name</th>
+				<th>Class Room Number</th>
+				<th>Student Limit</th>
+				<th>Hall Charge</th>
+				<th>Select</th>
+			</tr>
+		</tbody>
+		
+	</table>
+	<p id="totalclass" class="totalClass">Total Classes   : <span id="NumberOfStudent">0 </span> Rooms</p>
+	<input type="button" id="remove" class="btn btn-default" value="Delete" name="">
+</div>

@@ -1,0 +1,97 @@
+<div class="col-lg-12 col-sm-12 col-xs-12 styleHomeDashboard">
+	<h2>Add Subject <span style="font-size: .5em;"> Preview</span></h2>				
+	<a href="#"><span class="fa fa-home"></span>Home 
+		<span class="fa fa-angle-left"></span> Subject
+	</a>
+</div>			
+<div class="col-lg-7 col-sm-12 col-xs-12 addClass">
+	<h3>Add Subject</h3>
+
+	<form class="frm-addSubject"> 
+		<select name="" id="year" class="col-lg-5 col-sm-5 col-xs-5" title="Please Select Year before adding subject" style="border-radius: 4px; border: 1px solid lightgray;">
+			<option value="1"> Year 1</option>
+			<option value="2"> Year 2</option>
+			<option value="3"> Year 3</option>
+			<option value="4"> Year 4</option>
+		</select>
+		<select name="" id="semester" class="col-lg-5 col-sm-6 col-xs-6" title="Please Select Semester before adding subject" style="float: right; border-radius: 4px; border: 1px solid lightgray;">
+			<option value="1"> Semester 1</option>
+			<option value="2"> Semester 2</option>
+		</select>
+		
+	</form>
+
+	<form class="frm-addSubject frm-inSubject">
+		Subject's Name 
+			<span class="validate" id="invalidSubjectName"">* Please Enter Subject's Name</span>
+		<input type="text" class="form-control" title="Please Enter subject name" id="subjectName" placeholder="Enter class Subject Name" name="">
+		<br>
+
+		Subject's Code 
+			<span class="validate" id="invalidSubjectCode">* Please Enter Subject's Code</span>
+		<input type="number" title="Please Enter OR select Subject Code" class="form-control" id="subjectCode" placeholder="Enter Subject Code" name="">
+		<br>
+
+		Faculty <span style="float: right; padding-right: 28%;">Department</span>  <br>
+		<select name="" id="faculty" class="col-lg-5 col-sm-5 col-xs-5" id="year" title="Please choose 1 year" style="border-radius: 4px; border: 1px solid lightgray;">
+			<option value="Science">Science</option>
+			<option value="Society">Society</option>
+			<option value="Human">Human</option>
+			<option value="Foriegn Language">Foregn Language</option>
+
+		</select>
+		
+		<select name="" id="department" class="col-lg-5 col-sm-6 col-xs-6" title="Please choose 1 Department" style="float: right; border-radius: 4px; border: 1px solid lightgray;">
+			<option value="Computer Science">Computer Science</option>
+			<option value="Mathematics">Mathematics</option>
+			<option value="Philosophy">Philosophy</option>
+			<option value="Psychology">Psychology</option>
+			<option value="Tesol">Tesol</option>
+			<option value="Internation Relationship">Internation Relationship</option>
+
+		</select>
+		<br><br><br>
+		Teacher's Name 
+			<span class="validate" id="invalidSubjectTeacher">* Please Enter Teacher's Name</span>
+		<input type="text" class="form-control" id="TeacherName" placeholder="Teacher's Name" name=""><br>
+		
+		<input type="button" id="btnAddSubject" class="btn btn-primary" value="Add" title="Save all Data into Table" name="">
+							
+	</form>
+
+	
+</div>
+
+	
+</div>
+
+<div class="col-lg-12 col-sm-12 col-xs-12 showSubject">
+	<h3>All Subjects</h3>
+	
+	<table border="1" id="ShowTable" class="showTable table table-responsive">
+		<caption>
+			<form style="float: right;">
+				<!-- Search -->
+				<input id="search" class="clo-lg-3 form-control" type="text" title="Search Here" placeholder="Search" name="">
+
+			</form>
+		</caption>
+		<tbody id="table">
+			<tr>
+				<th>ID</th>
+				<th>Subject Name</th>
+				<th>Subject Code</th>
+				<th>Year</th>
+				<th>Semester</th>
+				<th>Faculty</th>
+				<th>Department</th>
+				<th>Teacher's Name</th>
+				<th>Select</th>
+			</tr>
+		</tbody>
+		
+	</table>
+	<p id="totalSubject" class="totalClass">Total Classes   : <span id="NumberOfSubject">0 </span> Rooms</p>
+	<input type="button" id="removeSubject" class="btn btn-default" value="Delete" name="">
+	
+</div>

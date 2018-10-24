@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>School Web Design</title>
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="CSS/RegisterCSS.css">
+	<link rel="stylesheet" href="CSS/StudentPayCSS.css">
+		<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="includes/School.css">
+	<script src="includes/JS/JavaScript.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="includes/CSS/LoginCSS.css">
+
+	<script src="includes/School.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="includes/Academic/Course-Class/CourseClass.js" type="text/javascript"></script>
+	<script src="includes/Teacher/jsschool.js" type="text/javascript"></script>
+	<script src="includes/Student/student.js" type="text/javascript"></script>
+	<script src="includes/Jquery/jquery.js" type="text/javascript"></script>
+	<link rel="shortcut icon" type="image/png" href="img/education.png">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		
+
+</head>
+<body>
+	<div id="logIn" class="container-fluid LOGIN" style="background-image: url(includes/Photos/bglogin.jpg); height: 650px">
+		<span></span>
+	</div>
+	
+	<span id="schoolManagement">
+	<nav class="container-fluid header">
+		<p><span style="color: #CFCFCF;">School </span><span style="color: #FF3030"> Management</span></p>
+		<div class="header-right">
+			<span class="fa fa-envelope-open-o"></span>
+			<a href="#" id="Headermaster">Headmaster <span class="caret"></span>
+				<div id="menuInHeadermaster" class="inHeadermaster">
+		            <li><a href="#"><span class="glyphicon glyphicon-user bootstrap-padding"></span>My Profile</a></li>
+		            <li><a href="#"><span class="fa fa-calendar bootstrap-padding"></span>My Calendar</a></li>
+		            <li><a href="#"><span class="glyphicon glyphicon-envelope bootstrap-padding"></span>Message</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#"><span class="fa fa-key bootstrap-padding" aria-hidden="true"></span>Log Out</a></li>
+	          	</div>
+			</a>
+		</div>
+	</nav>
+	<div>
+		<div class="container-fluid bgcolor-body-menu col-lg-2 col-sm-3 col-xs-9">
+			<div class="list-group bgcolor-menu col-lgs-12 col-sm-12">
+				<!-- menu bar -->
+				<div class="navbar-header menu-button">
+			      	<button type="button" class="btnBar">
+				        <span class="fa fa-bars"></span>
+			      	</button>
+				    <a class="navbar-brand" href="#">Menu</a>
+				     
+				</div><br><br><br>
+				<div class="menuBar bgcolor-menu">
+					<!-- menu Dashboard -->
+					<div class="menuDashboard">
+						<div class="menu" id="Dashboard">
+							<a href="#" >
+								<span class="glyphicon glyphicon-home icon-menu">
+								</span>Dashboard
+							</a>
+						</div>							
+					</div>
+							 
+					<!-- menu Academic -->
+					<div class="menuAcademic">
+						<div class="menu">
+							<a href="#" id="Academic" style="padding: 0;">
+						  		<span class="fa fa-group icon-menu"></span>Academic
+						  		<span class="caret icon-sign-menu"></span>
+
+						  		<div id="myDropdown-Academic" class="dropdown-content">
+						  			<a href="#" id="CourseClass" class="col-lg-12 col-sm-12 col-xs-12">
+						  				<span class="glyphicon glyphicon-triangle-right styleiconmenu">
+						  				</span>Course/Class
+						  			</a>
+						  			<a href="#" id="Subject" class="col-lg-12 col-sm-12 col-xs-12">
+						  				<span class="glyphicon glyphicon-triangle-right styleiconmenu"></span>Subject
+						  			</a>
+				<!-- 
+									<a href="#" class="col-lg-12">
+										<span class="glyphicon glyphicon-triangle-right styleiconmenu"></span>Examination
+									</a> -->
+									
+						  		</div>
+						  	</a>
+						</div>
+					</div> <!-- menuAcademic -->
+					<!-- Student Parents -->
+					<div class="menuStudentParents">
+						<div class="menu">
+							<a href="#" id="StudentParents" style="padding: 0;">
+						  		<span class="glyphicon glyphicon-user icon-menu"></span>Students
+						  		<span class="caret icon-sign-menu"></span>
+
+						  		<div id="myDropdown-StudentParents" class="dropdown-content">
+						  			<a href="#" id="studentRegister" class="col-lg-12 col-sm-12 col-xs-12">
+						  				<span class="glyphicon glyphicon-triangle-right styleiconmenu"></span>StuRegister
+						  			</a>
+						  			<a href="#" id="studentPayment" class="col-lg-12 col-sm-12 col-xs-12">
+						  				<span class="glyphicon glyphicon-triangle-right styleiconmenu"></span>StuPay
+						  			</a>
+									
+						  		</div>
+						  	</a>
+						</div>
+					</div> <!-- close Student Parents -->
+					 <!-- Teachers -->
+					<div class="menu menuTeacher">	
+						<div class="menu">			
+						  	<a href="#" id="Teachers" style="padding: 0;">
+						  		<span class="fa fa-user-plus icon-menu"></span>Teachers
+						  		<span class="caret icon-sign-menu"></span>
+						  	</a>
+						</div>
+					</div> <!--  Teachers -->
+					<!-- HRM -->
+					<div class="menuHRM">
+						<div class="menu">				
+						  	<a href="#" id="HRM" style="padding: 0;">
+						  		<span class="fa fa-eye icon-menu"></span>HRM
+						  		<span class="caret icon-sign-menu"></span>
+						  	</a>
+						</div>
+					</div> <!--  HRM -->
+				 	<!-- Account -->
+					<div class="menuAccount">
+						<div class="menu">					
+						  	<a href="#" id="Account" style="padding: 0;">
+						  		<span class="fa fa-calculator icon-menu"></span>Account
+						  		<span class="caret icon-sign-menu"></span>						  		
+						  	</a>
+						</div>
+					</div> <!--  Account -->
+
+					<!-- Library -->
+					<div class="menuLibrary">					
+						<div class="menu">
+						  	<a href="#" id="Library" style="padding: 0;">
+						  		<span class="fa fa-university icon-menu"></span>Library
+						  		<span class="caret icon-sign-menu"></span>
+						  	</a>
+						</div>
+					</div> <!--  Teachers -->
+
+					<!-- Message -->
+					<div class="menuMessage">
+						<div class="menu">					
+						  	<a href="#" id="Message" style="padding: 0;">
+						  		<span class="fa fa-envelope-open-o icon-menu"></span>Message
+						  		<span class="caret icon-sign-menu"></span>
+						  	</a>
+						</div>
+					</div> <!--  Message -->
+					
+					<!-- Event Calendar -->
+					<div class="menuEventCalendar">	
+						<div class="menu">			
+						  	<a href="#" id="EventCalendar" style="padding: 0;">
+						  		<span class="fa fa-calendar icon-menu"></span>Event Calendar
+						  		<span class="caret icon-sign-menu"></span>						  		
+						  	</a>
+						</div>
+					</div> <!--  Event Calendar -->
+
+					<!-- Store Management -->
+					<div class="menuContact">	
+						<div class="menu">				
+						  	<a href="#" id="Contact" style="padding: 0;">
+						  		<span class="fa fa-phone icon-menu"></span>Contact
+						  		<span class="caret icon-sign-menu"></span>
+						  	</a>
+						</div>
+					</div> <!--  Contact -->
+
+					<!-- Setting -->
+					<div class="menuSetting">
+						<div class="menu">					
+						  	<a href="#" id="Setting" style="padding: 0;">
+						  		<span class="fa fa-gear icon-menu"></span>Setting
+						  		<span class="caret icon-sign-menu"></span>
+						  	</a>
+						</div>
+					</div> <!--  Setting -->
+					  	
+					<div class="showMenu">
+						<button type="button" class="btn btn-sm" id="ShowMenu" value="Show Menu">Show Menu</button>
+					</div>
+				</div> <!-- menuBar -->	  		
+			</div> <!-- menu List -->
+		</div> <!-- menu Body -->
+
+		<div class="col-lg-10 col-sm-9 col-xs-12" style="background-color: #eee; ">
+			<div class="col-lg-12 col-sm-12 col-xs-12 style-bodyRight bodySide"></div>
+			<!-- DASHBOARD -->
+			<div id="inDashboard" class="col-lg-12 information-AddClass bodySide"></div>
+
+			<!--add class and section in course of Academic  -->
+			<div  id="ClassSection" class="col-lg-12 col-sm-12 col-xs-12 bgcolor-academic-addclass information-AddClass bodySide"></div>
+			<!-- subject in course of Academic  -->
+			<div  id="inSubject" class="col-lg-12 col-sm-12 col-xs-12 bgcolor-academic-addclass information-AddClass bodySide"></div>
+
+			<!-- Student content -->
+			<!-- Student Register -->
+			<div  id="St-Register" class="col-lg-12 col-sm-12 col-xs-12 bgcolor-academic-addclass information-AddClass bodySide"></div>
+			<div id="St-Payment" class="col-lg-12 col-sm-12 col-xs-12 bgcolor-academic-addclass information-AddClass bodySide">
+				
+			</div>
+
+			<!-- Teacher -->
+			<div id="inTeacher" class="col-lg-12 col-sm-12 col-xs-12 bgcolor-academic-addclass information-AddClass bodySide"></div>
+
+			<!-- ACCOUNT -->
+			<div class="col-lg-12 col-sm-12 col-xs-12 information-AddClass bodySide" id="inAccount" style="background:url(includes/Photos/bg.jpg);"></div>
+
+			<!-- LIBRARY -->
+			<div class="col-lg-12 col-sm-12 col-xs-12 information-AddClass bodySide" id="inLibrary"></div>
+
+			<!-- Event calendar -->
+			<div id="inEventCalendar" class="col-lg-12 col-sm-12 col-xs-12 information-AddClass infEventCalendar"></div>
+
+			<!-- Contact -->
+			 <div class="col-lg-12 col-sm-12-col-xs-12 information-AddClass infContact" id="inContact"></div>
+
+		</div>   <!-- right side -->
+
+
+	</div>
+	</span>
+
+</body>
+</html>
